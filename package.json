@@ -1,0 +1,56 @@
+{
+  "name": "payments-list",
+  "version": "0.0.1",
+  "description": "Payments list test task",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "istanbul test _mocha -- --recursive test/**/*.{js,jsx}",
+    "watch": "webpack && http-server www -p 9000 -o & webpack --watch",
+    "build": "webpack --mode development",
+    "build:prod": "NODE_ENV=production webpack --mode production"
+  },
+  "keywords": [
+    "test",
+    "task",
+    "paymtents",
+    "list"
+  ],
+  "author": "Ilia Isupov <ilia.isupov@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-jss": "^8.6.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "copy-webpack-plugin": "^4.5.2",
+    "enzyme": "^3.4.4",
+    "enzyme-adapter-react-16": "^1.2.0",
+    "eslint": "^5.4.0",
+    "eslint-plugin-react": "^7.11.1",
+    "html-webpack-plugin": "^3.2.0",
+    "istanbul": "^0.4.5",
+    "jsdom": "^11.12.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^5.2.0",
+    "redux-mock-store": "^1.5.3",
+    "sinon": "^6.1.5",
+    "sinon-chai": "^3.2.0",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
+  }
+}

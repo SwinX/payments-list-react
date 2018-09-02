@@ -1,0 +1,22 @@
+
+*.csproj.user
+*.suo
+*.cache
+Thumbs.db
+*.DS_Store
+
+*.bak
+*.cache
+*.log
+*.swp
+*.user
+.awcache
+junit.xml
+
+
+/node_modules
+/www
+
+# Editor
+.vscode
+jsconfig.json
